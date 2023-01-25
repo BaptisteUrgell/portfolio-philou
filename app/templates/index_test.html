@@ -43,6 +43,12 @@
             <li>
                 <a href="#recreation" class="block py-2 pl-3 pr-4 text-l text-white md:hover:text-emerald-700 md:p-0">Loisir</a>
             </li>
+            <li>
+                <a href="#sport" class="block py-2 pl-3 pr-4 text-l text-white md:hover:text-emerald-700 md:p-0">Sport</a>
+            </li>
+            <li>
+                <a href="#rugby" class="block py-2 pl-3 pr-4 text-l text-white md:hover:text-emerald-700 md:p-0">Rugby</a>
+            </li>
         </ul>
     </nav> 
     <!-- End Navbar -->
@@ -83,7 +89,7 @@
                 </ul>
                 <div class="md:col-span-2 sm:col-span-1"> 
                     <div class="flex justify-between mb-1">
-                        <span class="text-base font-medium">Français</span>
+                        <span class="text-base font-medium">Français - Langue natale</span>
                         <span class="text-sm font-medium">100%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5">
@@ -92,7 +98,7 @@
                 </div>
                 <div class="md:col-span-2 sm:col-span-1"> 
                     <div class="flex justify-between mb-1">
-                        <span class="text-base font-medium">Anglais</span>
+                        <span class="text-base font-medium">Anglais - Bon niveau</span>
                         <span class="text-sm font-medium">70%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5">
@@ -101,7 +107,7 @@
                 </div>
                 <div class="md:col-span-2 sm:col-span-1"> 
                     <div class="flex justify-between mb-1">
-                        <span class="text-base font-medium">Allemand</span>
+                        <span class="text-base font-medium">Allemand - Notion</span>
                         <span class="text-sm font-medium">45%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5">
@@ -254,7 +260,7 @@
                     <p class="text-justify">Quand j’ai rejoint l’ASRUC je venais de déménager de Toulouse sur Rouen laissant derrière moi mes amis. Je me suis sentie immédiatement intégrée grâce au Rugby et mes coéquipières à qui je dois beaucoup. Mon réseau d’amis est dense car je m’emploi à garder le contact et entretenir l’amitié.</p>
                 </div>
 
-                <div class="rounded-md shadow-lg shadow-black bg-gray-200 p-4 col-span-2">
+                <div class="rounded-md shadow-lg shadow-black bg-gray-200 p-4 md:col-span-2">
                     <div class="flex justify-center items-center space-x-2 py-2">
                         <img src="{{ url_for('assets', path='img/recreation/trip.png') }}" class="rounded-full h-14 w-14">
                         <h1 class="font-bold text-xl">Voyages</h1>
@@ -265,6 +271,107 @@
         </div>
     </section>
     <!-- End Recreation -->
+
+    <!-- Sport Section -->
+    <section id="sport" class="scroll-smooth">
+        <div class="w-full py-20">
+            <h1 class="text-white text-center text-4xl mb-6 pb-20">Sport</h1>
+            <div class="grid gap-10 md:grid-cols-2 px-20 md:px-40">
+                <div class="flex flex-col justify-center text-white text-justify sm:text-lg md:text-2xl space-y-4">
+                    <p class="indent-8">
+                        Dès mon plus jeune âge j’ai pratiqué le sport. C’est une question d’équilibre indispensable dans ma vie. J’ai l’envie et le besoin de compétition et de dépassement de soi que ce soit dans l’atteinte d’objectifs individuels ou collectifs.
+                    </p>
+                    <p class="indent-8">
+                        Mes aptitudes physiques, mon endurance et mon mental sont mes atouts principaux. Le sport fait partie intégrale de mon projet professionnel qui murit depuis le collège.
+                    </p>
+                </div>
+                <div class="flex flex-col space-y-4 justify-center">
+                    <div class="rounded-md shadow-lg shadow-black bg-gray-200 p-4">
+                        <div class="flex md:flex-row sm:flex-col justify-between items-center py-2">
+                            <div class="flex justify-right items-center space-x-2">
+                                <img src="{{ url_for('assets', path='img/sport/horse.png') }}" class="rounded-full h-14 w-14">
+                                <h1 class="font-bold text-xl">Equitation</h1>
+                            </div>
+                            <p class="text-xl"> Niveau galop 5 - CSO à 12 ans</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded-md shadow-lg shadow-black bg-gray-200 p-4">
+                        <div class="flex md:flex-row sm:flex-col justify-between items-center py-2">
+                            <div class="flex justify-right items-center space-x-2">
+                                <img src="{{ url_for('assets', path='img/sport/ski.png') }}" class="rounded-full h-14 w-14">
+                                <h1 class="font-bold text-xl">Ski</h1>
+                            </div>
+                            <p class="text-xl"> Niveau compétition - Etoile d'or à 8 ans</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded-md shadow-lg shadow-black bg-gray-200 p-4">
+                        <div class="flex md:flex-row sm:flex-col justify-between items-center py-2">
+                            <div class="flex justify-right items-center space-x-2">
+                                <img src="{{ url_for('assets', path='img/sport/grs.png') }}" class="rounded-full h-14 w-14">
+                                <h1 class="font-bold text-xl">GRS</h1>
+                            </div>
+                            <p class="text-xl"> Première compétition à 7 ans</p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Sport -->
+
+    <!-- Rugby Section -->
+    <section id="rugby" class="scroll-smooth">
+        <div class="w-full p-20">
+            <h1 class="text-white text-center text-4xl mb-6 pb-20">Rugby</h1>
+            <ol class="items-center sm:flex">
+                <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pr-8">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                    </div>
+                </li>
+                <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pr-8">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.0</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 23, 2021</time>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                    </div>
+                </li>
+                <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pr-8">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.3.0</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 5, 2022</time>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+                    </div>
+                </li>
+            </ol>
+
+        </div>
+    </section>
+    <!-- End Rugby -->
+
 
     <footer class="bg-gray-200 text-center lg:text-left">
         <div class="text-gray-700 text-center p-4">
