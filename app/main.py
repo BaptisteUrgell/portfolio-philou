@@ -23,7 +23,7 @@ app.mount("/assets", StaticFiles(directory="./app/assets"), name="assets")
 
 @app.get("/", response_class=HTMLResponse)
 def serve_home(request: Request):
-    return templates.TemplateResponse("index_test.html", context={'request': request})
+    return templates.TemplateResponse("index.html", context={'request': request})
 
 @app.get("/curriculum-vitae", response_class=FileResponse)
 def download_cv(request: Request):
