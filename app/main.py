@@ -1,9 +1,12 @@
+import os
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi import Form, Request
 
+MAIN_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 
 TITLE = 'Portfolio'
 CONTACTS = 'baptiste.u@gmail.com'
@@ -27,7 +30,7 @@ def serve_home(request: Request):
 
 @app.get("/curriculum-vitae", response_class=FileResponse)
 def download_cv(request: Request):
-    return "assets/file/cv_philippine_urgell.pdf"
+    return os.path.join(MAIN_DIRECTORY, "assets", "file", "cv_philippine_urgell.pdf")
 
 @app.get('/info')
 async def about() -> dict[str, str]:
